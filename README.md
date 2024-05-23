@@ -10,7 +10,7 @@ Todo esto lo hicimos mediante ciclos if y while.
 
 Se incluyeron dos excepciones, una dentro de la función que salta cuando el usuario ingresa algo diferente a las posibles  operaciones (+,-,*,/,//), esto es un raise dentro de las opciones. La otra excepción es al final, el cual salta en caso de que el usuario ingrese algo diferente a un número, este esta enforma de try-except.
 
-```
+``` python
 def operaciones(numero_1: float, numero_2: float): # Función
   print("QUE OPERACIÓN DESEAS REALIZAR, SEGUN ESO PON EL SIGNO ASOCIADO \n+ = Suma \n- = Resta \n* = Multiplicación \n/ = División (Número 1 / Número 2) \n// = División Entera (Número 1 // Número 2)") #Explicación por si alguien no lo tiene claro
   eleccion = input("Ingresa la operación que quieras asociada a su número: ")
@@ -47,7 +47,7 @@ No se valia el slicing, pero y si creo dos listas en la que una ingrese la palab
 
 Pusimos el normal try-except para comprobar cualquier error existente y un raise en el que buscamos comprobar si lo que se esta ingresando es realmente una letra o el usuario ingreso algun caracter o número.
 
-```
+``` python
 def palindromo(palabra): # Función9
   lista = [] # Lista para la palabra
   lista_al_revez = [] # Lista de la palabra al revez
@@ -78,7 +78,7 @@ Este punto le permite ingresar al usuario los números que desse agregar a la li
 
 La excepción la inlcuios al final buscando un error en el que el usuario probabelemnte ingrese algo que no sea un número.
 
-```
+``` python
 def primos(lista): # Función
   lista_primos = [] # Lista de primos
   for i in lista: # Recorrer los elemntos de la lista
@@ -122,7 +122,7 @@ El usuario ingresa los números que desee, y usamos variables vacias y ciclos fo
 
 La excepción la inlcuios al final buscando un error en el que el usuario probabelemnte ingrese algo que no sea un número.
 
-```
+``` python
 
 def sum_may(datos, lista): # Función
   sum_ma = 0 # Variable de suma mayor
@@ -159,7 +159,7 @@ El usuario ingresa la lista con valores que el desea, la función crea una lista
 
 Ingresamos un try al final que esta principalmente por si al momento de ingresar la cantidad de palabras se ingresa un númeoro o caracter. El otro es un raise que agregamos en caso de que al ingresar las palabras, se ingresen números o caracteres.
 
-```
+``` python
 def palabras_con_mismos_caracteres(lista): # Lista
   lista_copia = [] # Lista copia
   lista_pal_rep = [] # Lista por si hay palabras repetidas
